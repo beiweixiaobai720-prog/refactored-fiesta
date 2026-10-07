@@ -1,0 +1,349 @@
+{
+  "all_ok": true,
+  "engine": "4.7.2-stable (official)",
+  "levels": [
+    {
+      "id": "1-1",
+      "name": "一只猫",
+      "negatives": [
+        {
+          "name": "什么都不做",
+          "won": false
+        }
+      ],
+      "solutions": [
+        {
+          "found": [
+            "set",
+            "bridge",
+            "stairs"
+          ],
+          "name": "沟里靠沙发",
+          "robust": "16/16",
+          "states": [
+            0,
+            16,
+            0,
+            0
+          ],
+          "win_t": 21.8,
+          "won": true
+        },
+        {
+          "found": [
+            "set",
+            "bridge"
+          ],
+          "name": "沟中间",
+          "robust": "16/16",
+          "states": [
+            0,
+            16,
+            0,
+            0
+          ],
+          "win_t": 21.8,
+          "won": true
+        }
+      ]
+    },
+    {
+      "id": "1-2",
+      "name": "猫塔",
+      "negatives": [
+        {
+          "name": "什么都不做",
+          "won": false
+        },
+        {
+          "name": "只叫醒塔顶一只",
+          "won": false
+        }
+      ],
+      "solutions": [
+        {
+          "found": [
+            "melt",
+            "avalanche",
+            "set",
+            "bridge"
+          ],
+          "name": "推倒三座塔再填沟",
+          "robust": "16/16",
+          "states": [
+            0,
+            19,
+            0,
+            0
+          ],
+          "win_t": 17.45,
+          "won": true
+        }
+      ]
+    },
+    {
+      "id": "1-3",
+      "name": "猫丘",
+      "negatives": [
+        {
+          "name": "什么都不做",
+          "won": false
+        },
+        {
+          "name": "只填平沟",
+          "won": false
+        },
+        {
+          "name": "挂高但挂在沟中间",
+          "won": false
+        }
+      ],
+      "solutions": [
+        {
+          "found": [
+            "mound",
+            "flow",
+            "set",
+            "bridge",
+            "stairs"
+          ],
+          "name": "红点挂高处",
+          "robust": "16/16",
+          "states": [
+            0,
+            30,
+            0,
+            0
+          ],
+          "win_t": 18.0,
+          "won": true
+        },
+        {
+          "found": [
+            "mound",
+            "flow",
+            "set",
+            "bridge",
+            "stairs",
+            "melt",
+            "piggy"
+          ],
+          "name": "红点慢慢抬高",
+          "robust": "16/16",
+          "states": [
+            0,
+            30,
+            0,
+            0
+          ],
+          "win_t": 22.72,
+          "won": true
+        }
+      ]
+    },
+    {
+      "id": "1-4",
+      "name": "拆桥",
+      "negatives": [
+        {
+          "name": "一次全堆进第二道",
+          "won": false
+        }
+      ],
+      "solutions": [
+        {
+          "found": [
+            "set",
+            "bridge",
+            "melt",
+            "mound",
+            "piggy",
+            "split",
+            "reuse"
+          ],
+          "name": "先填第一道再挪",
+          "robust": "16/16",
+          "states": [
+            0,
+            12,
+            0,
+            0
+          ],
+          "win_t": 53.1,
+          "won": true
+        }
+      ]
+    },
+    {
+      "id": "2-1",
+      "name": "晒",
+      "negatives": [
+        {
+          "name": "什么都不做",
+          "won": false
+        }
+      ],
+      "solutions": [
+        {
+          "found": [
+            "mound",
+            "sunmold",
+            "split",
+            "flow",
+            "bridge",
+            "stairs"
+          ],
+          "name": "先倒满水槽再堆坡",
+          "robust": "15/16",
+          "states": [
+            0,
+            24,
+            0,
+            0
+          ],
+          "win_t": 35.98,
+          "won": true
+        }
+      ]
+    },
+    {
+      "id": "2-2",
+      "name": "啪",
+      "negatives": [
+        {
+          "name": "只用红点",
+          "won": false
+        }
+      ],
+      "solutions": [
+        {
+          "found": [
+            "sunmold",
+            "bridge",
+            "stairs",
+            "piggy",
+            "mound",
+            "chain",
+            "reuse",
+            "set"
+          ],
+          "name": "拍两次再填水槽",
+          "robust": "16/16",
+          "states": [
+            0,
+            20,
+            0,
+            0
+          ],
+          "win_t": 33.17,
+          "won": true
+        }
+      ]
+    },
+    {
+      "id": "3-1",
+      "name": "蹦床",
+      "negatives": [
+        {
+          "name": "只堆坡不拍手",
+          "won": false
+        }
+      ],
+      "solutions": [
+        {
+          "found": [
+            "mound",
+            "set",
+            "bridge",
+            "tramp"
+          ],
+          "name": "靠墙堆坡再拍手",
+          "robust": "16/16",
+          "states": [
+            0,
+            18,
+            0,
+            0
+          ],
+          "win_t": 21.05,
+          "won": true
+        }
+      ]
+    },
+    {
+      "id": "3-2",
+      "name": "上楼",
+      "negatives": [
+        {
+          "name": "什么都不做",
+          "won": false
+        }
+      ],
+      "solutions": [
+        {
+          "found": [
+            "set",
+            "bridge",
+            "stairs",
+            "mound",
+            "split",
+            "flow",
+            "piggy",
+            "reuse",
+            "tramp",
+            "fizzle"
+          ],
+          "name": "铺桥-拍醒-堆坡-蹦床",
+          "robust": "16/16",
+          "states": [
+            0,
+            18,
+            0,
+            0
+          ],
+          "win_t": 38.92,
+          "won": true
+        }
+      ]
+    },
+    {
+      "id": "4-1",
+      "name": "看月亮",
+      "negatives": [
+        {
+          "name": "什么都不做",
+          "won": false
+        }
+      ],
+      "solutions": [
+        {
+          "found": [
+            "melt",
+            "avalanche",
+            "flow",
+            "split",
+            "set",
+            "bridge",
+            "stairs",
+            "chain",
+            "mound",
+            "piggy",
+            "reuse",
+            "tramp",
+            "fizzle"
+          ],
+          "name": "推塔-填沟-拍醒-堆坡-蹦床",
+          "robust": "15/16",
+          "states": [
+            16,
+            15,
+            0,
+            0
+          ],
+          "win_t": 48.13,
+          "won": true
+        }
+      ]
+    }
+  ]
+}

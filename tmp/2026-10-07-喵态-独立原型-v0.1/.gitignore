@@ -1,0 +1,4 @@
+# Godot 缓存与导出产物（试玩版 zip 例外，单独放在 试玩版/）
+godot/.godot/
+godot/**/*.tmp
+build/
